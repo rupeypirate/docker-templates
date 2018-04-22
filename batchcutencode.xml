@@ -17,8 +17,8 @@ complete directory - videos that have completed encoding
 </Overview>
 <Support></Support>
 <Description>batchcutencode is designed to reencode recorded videos, but will encode any mp4/mkv/avi to mp4.</Description>
-<Registry>https://registry.hub.docker.com/r/rupeypirate/batchcutencode/</Registry>
-<Repository>rupeypirate/batchcutencode</Repository>
+<Registry>https://hub.docker.com/r/rupeypirate/batchcutencode/</Registry>
+<Repository>rupeypirate/batchcutencode:latest</Repository>
 <BindTime>true</BindTime>
 <Privileged>false</Privileged>
 <Networking>
@@ -30,8 +30,8 @@ complete directory - videos that have completed encoding
 </Networking>
 <Environment>
 <Variable>
-<Name></Name>
-<Value></Value>
+<Name>VERSION</Name>
+<Value>latest</Value>
 </Variable>
 </Environment>
 <Data>
