@@ -36,8 +36,8 @@ complete directory - videos that have completed encoding
 </Environment>
 <Data>
 <Volume>
-<HostDir></HostDir>
-<ContainerDir></ContainerDir>
+<HostDir>/mnt/user/transcode</HostDir>
+<ContainerDir>/transcode</ContainerDir>
 <Mode>rw</Mode>
 </Volume>  
 </Data>
