@@ -12,7 +12,7 @@
 	</Overview>
 	<Support></Support>
 	<Registry>https://hub.docker.com/r/rupeypirate/batchcutencode/</Registry>
-	<Repository>rupeypirate/batchcutencode:latest</Repository>
+	<Repository>rupeypirate/batchcutencode</Repository>
 	<BindTime>true</BindTime>
 	<Privileged>false</Privileged>
 	<Networking>
