@@ -3,13 +3,18 @@
 	<Name>batchcutencode</Name>
 	<Beta>False</Beta>
 	<Category>Downloaders: MediaServer:Video</Category>
-	<Description>batchcutencode is designed to reencode recorded videos, but will encode any mp4/mkv/avi to mp4.</Description>
-	<Overview>batchcutencode is designed to re-encode recorded videos, but will encode any mp4/mkv/avi to mp4.
+	<Overview>batchcutencode will re-encode recorded videos to conserve storage space.</Overview>
 
-	cut directory - videos will have 5 seconds cut off the beginning and end, and then be moved to the encode directory.
-	encode directory - videos will be re-encoded using HandBrake's normal preset.  
-	complete directory - videos that have completed encoding
-	</Overview>
+	<Description>batchcutencode will re-encode recorded videos.  HandBrake for the conversion and currently only will process mp4/mkv/avi/ts to mp4.[br][br]
+	This docker will create (by default) a share called transcode.  Create 3 directories in the share (cut, encode, complete).[br]
+	cut directory - videos will have 5 seconds cut off the beginning and end, and then be moved to the encode directory.[br]
+	encode directory - videos will be re-encoded using HandBrake's normal preset.  [br]
+	complete directory - videos that have completed encoding[br]
+	
+	leave autostart to off.  Start the docker each time you want it to run.[br]
+	</Description>
+	<Change>
+	</Change>
 	<Support></Support>
 	<Registry>https://hub.docker.com/r/rupeypirate/batchcutencode/</Registry>
 	<Repository>rupeypirate/batchcutencode</Repository>
