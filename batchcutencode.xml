@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+<Name>batchcutencode</Name>
+<Beta>False</Beta>
+<Project></Project>
+<Changes>
+[center][font size=5]batchcurencode Change Log[/font][/center]
+[font size=4]2018.04.21[/font]
+- Initial version.
+</Changes>
+<Category>Downloaders: MediaServer:Video</Category>
+<Overview>batchcutencode is designed to re-encode recorded videos, but will encode any mp4/mkv/avi to mp4.
+
+cut directory - videos will have 5 seconds cut off the beginning and end, and then be moved to the encode directory.
+encode directory - videos will be re-encoded using HandBrake's normal preset.  
+complete directory - videos that have completed encoding
+</Overview>
+<Support></Support>
+<Description>batchcutencode is designed to reencode recorded videos, but will encode any mp4/mkv/avi to mp4.</Description>
+<Registry>https://registry.hub.docker.com/r/rupeypirate/batchcutencode/</Registry>
+<Repository>rupeypirate/batchcutencode</Repository>
+<BindTime>true</BindTime>
+<Privileged>false</Privileged>
+<Networking>
+<Mode>bridge</Mode>
+<Publish>
+<Port>
+</Port>
+</Publish>
+</Networking>
+<Environment>
+<Variable>
+<Name></Name>
+<Value></Value>
+</Variable>
+</Environment>
+<Data>
+<Volume>
+<HostDir></HostDir>
+<ContainerDir></ContainerDir>
+<Mode>rw</Mode>
+</Volume>  
+</Data>
+<WebUI></WebUI>
+<Banner></Banner>
+<Icon></Icon>
+</Container>
