@@ -2,8 +2,8 @@
 <Container>
 	<Name>batchcutencode</Name>
 	<Beta>False</Beta>
-	<Category>Downloaders: MediaServer:Video</Category>
-	<Overview>batchcutencode will re-encode recorded videos to conserve storage space.</Overview>
+	<Category>MediaServer:Video</Category>
+	<Overview>batchcutencode will re-encode recorded videos to conserve storage space.  It was originally developed to re-encode videos from either DVR's such as mythtv, plex DVR, or playon.</Overview>
 
 	<Description>batchcutencode will re-encode recorded videos.  HandBrake for the conversion and currently only will process mp4/mkv/avi/ts to mp4.[br][br]
 	This docker will create (by default) a share called transcode.  Create 3 directories in the share (cut, encode, complete).[br]
@@ -11,10 +11,14 @@
 	encode directory - videos will be re-encoded using HandBrake's normal preset.  [br]
 	complete directory - videos that have completed encoding[br]
 	
-	leave autostart to off.  Start the docker each time you want it to run.[br]
+	Once the docker is started, files can be copied into the cut or encode directories.  They will be automatically detected and the processing will be kicked off.  If files are copied in the directories prior to teh docker starting, they will not be detected.[br][br]
+	
+	
+	Future enhancements:[br]
+	* add variables in the docker template to allow variable cut times[br]
+	* allow the cut, encode, and complete directories to be customizable to user specified directories.[br]
 	</Description>
-	<Change>
-	</Change>
+	<Change></Change>
 	<Support></Support>
 	<Registry>https://hub.docker.com/r/rupeypirate/batchcutencode/</Registry>
 	<Repository>rupeypirate/batchcutencode</Repository>
