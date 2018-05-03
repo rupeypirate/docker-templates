@@ -32,12 +32,14 @@
 		</Publish>
 	</Networking>
 	<Environment>
-	<Variable>
-	<Name>SECONDS_FRONT</Name>
-	<Value>5</Value>
-	<Name>SECONDS_END</Name>
-	<Value>5</Value>
-	</Variable>
+		<Variable>
+		<Name>SECONDS_FRONT</Name>
+		<Value>5</Value>
+		</Variable>
+		<Variable>
+		<Name>SECONDS_END</Name>
+		<Value>5</Value>
+		</Variable>
 	</Environment>
 	<Data>
 		<Volume>
