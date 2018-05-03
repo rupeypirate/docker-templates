@@ -43,10 +43,20 @@
 	</Environment>
 	<Data>
 		<Volume>
-			<HostDir>/mnt/user/transcode</HostDir>
-			<ContainerDir>/transcode</ContainerDir>
+			<HostDir>/mnt/user/transcode/cut</HostDir>
+			<ContainerDir>/transcode/cut</ContainerDir>
 			<Mode>rw</Mode>
 		</Volume>  
+		<Volume>
+			<HostDir>/mnt/user/transcode/encode</HostDir>
+			<ContainerDir>/transcode/encode</ContainerDir>
+			<Mode>rw</Mode>
+		</Volume> 
+		<Volume>
+			<HostDir>/mnt/user/transcode/complete</HostDir>
+			<ContainerDir>/transcode/complete</ContainerDir>
+			<Mode>rw</Mode>
+		</Volume> 
 	</Data>
 	<WebUI></WebUI>
 	<Banner></Banner>
