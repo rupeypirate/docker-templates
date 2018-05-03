@@ -14,9 +14,9 @@
 	Once the docker is started, files can be copied into the cut or encode directories.  They will be automatically detected and the processing will be kicked off.  If files are copied in the directories prior to teh docker starting, they will not be detected.[br][br]
 	
 	
-	Future enhancements:[br]
-	* add variables in the docker template to allow variable cut times[br]
-	* allow the cut, encode, and complete directories to be customizable to user specified directories.[br]
+	Variables:[br]
+	* SECONDS_FRONT: seconds to be cut off beginning of video.  must be an integer.  Default is 5 seconds[br]
+	* SECONDS_END: seconds to be cut off end of video.  must be an integer.  Default is 5 seconds[br]
 	</Description>
 	<Change></Change>
 	<Support></Support>
