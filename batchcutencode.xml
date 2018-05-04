@@ -17,6 +17,11 @@
 	Variables:[br]
 	* SECONDS_FRONT: seconds to be cut off beginning of video.  must be an integer.  Default is 5 seconds[br]
 	* SECONDS_END: seconds to be cut off end of video.  must be an integer.  Default is 5 seconds[br]
+	* ENCODE_PROFILE:
+		Very Fast 1080p30
+		Fast 1080p30
+		HQ 1080p30 Surround
+		Super HQ 1080p30 Surround
 	</Description>
 	<Change></Change>
 	<Support></Support>
@@ -33,27 +38,31 @@
 	</Networking>
 	<Environment>
 		<Variable>
-		<Name>SECONDS_FRONT</Name>
-		<Value>5</Value>
+			<Name>ENCODE_PROFILE</Name>
+			<Value>Fast 1080p30</Value>
+		</Variable>		
+		<Variable>
+			<Name>SECONDS_FRONT</Name>
+			<Value>5</Value>
 		</Variable>
 		<Variable>
-		<Name>SECONDS_END</Name>
-		<Value>5</Value>
+			<Name>SECONDS_END</Name>
+			<Value>5</Value>
 		</Variable>
 	</Environment>
 	<Data>
 		<Volume>
-			<HostDir>/mnt/user/transcode/cut</HostDir>
+			<HostDir></HostDir>
 			<ContainerDir>/transcode/cut</ContainerDir>
 			<Mode>rw</Mode>
 		</Volume>  
 		<Volume>
-			<HostDir>/mnt/user/transcode/encode</HostDir>
+			<HostDir></HostDir>
 			<ContainerDir>/transcode/encode</ContainerDir>
 			<Mode>rw</Mode>
 		</Volume> 
 		<Volume>
-			<HostDir>/mnt/user/transcode/complete</HostDir>
+			<HostDir></HostDir>
 			<ContainerDir>/transcode/complete</ContainerDir>
 			<Mode>rw</Mode>
 		</Volume> 
