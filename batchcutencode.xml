@@ -17,11 +17,12 @@
 	Variables:[br]
 	* SECONDS_FRONT: seconds to be cut off beginning of video.  must be an integer.  Default is 5 seconds[br]
 	* SECONDS_END: seconds to be cut off end of video.  must be an integer.  Default is 5 seconds[br]
-	* ENCODE_PROFILE:
-		Very Fast 1080p30
-		Fast 1080p30
-		HQ 1080p30 Surround
-		Super HQ 1080p30 Surround
+	* ENCODE_PROFILE:[br]
+		Very Fast 1080p30[br]
+		Fast 1080p30[br]
+		HQ 1080p30 Surround[br]
+		Super HQ 1080p30 Surround[br]
+[br]
 	</Description>
 	<Change></Change>
 	<Support></Support>
