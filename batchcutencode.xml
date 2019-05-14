@@ -5,24 +5,26 @@
 	<Category>MediaServer:Video</Category>
 	<Overview>batchcutencode will re-encode recorded videos to conserve storage space.  It was originally developed to re-encode videos from either DVR's such as mythtv, plex DVR, or playon.</Overview>
 
-	<Description>batchcutencode will re-encode recorded videos.  HandBrake for the conversion and currently only will process mp4/mkv/avi/ts to mp4.[br][br]
-	This docker will create (by default) a share called transcode.  Create 3 directories in the share (cut, encode, complete).[br]
+	<Description>batchcutencode will re-encode recorded videos.  It uses HandBrake for the conversion and currently only will process mp4/mkv/avi/ts to mp4.[br]
+	This docker will create (by default) a share called transcode.  There will be 3 directories in the share (cut, encode, complete), and a defaultsettings file.[br]
+	[br]
+	Once the docker is started, files can be copied into the cut or encode directories.  They will be automatically detected and the processing will be kicked off.  If files are copied in the directories prior to teh docker starting, they will not be detected.[br]
+	[br]
+	The defaultsettings.txt file allows you to override environment variables set in the UNRAID docker configuration.  These setting will apply withour the docker being restarted.  They will apply to the next file that is processed.[br]
+	[br]
+	Directories:[br]
 	cut directory - videos will have 5 seconds cut off the beginning and end, and then be moved to the encode directory.[br]
 	encode directory - videos will be re-encoded using HandBrake's normal preset.  [br]
 	complete directory - videos that have completed encoding[br]
-	
-	Once the docker is started, files can be copied into the cut or encode directories.  They will be automatically detected and the processing will be kicked off.  If files are copied in the directories prior to teh docker starting, they will not be detected.[br][br]
-	
-	The batchcutencode directory on the share has a file called defaultsettings.txt.  This allows you to override environment variables set in the GUI on the fly.[br][br]
-	
+	[br]
 	Variables:[br]
 	* SECONDS_FRONT: seconds to be cut off beginning of video.  must be an integer.  Default is 5 seconds[br]
 	* SECONDS_END: seconds to be cut off end of video.  must be an integer.  Default is 5 seconds[br]
-	* ENCODE_PROFILE:[br][br]
-	Very Fast 1080p30[br][br]
-	Fast 1080p30[br][br]
-	HQ 1080p30 Surround[br][br]
-	Super HQ 1080p30 Surround[br][br]
+	* ENCODE_PROFILE: Handbrake encoding profile to use.  Custom profiles are not possible.[br]
+	"Very Fast 1080p30"[br]
+	"Fast 1080p30"[br]
+	"HQ 1080p30 Surround"[br]
+	"Super HQ 1080p30 Surround"[br]
 [br]
 	</Description>
 	<Change></Change>
