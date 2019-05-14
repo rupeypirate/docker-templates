@@ -54,18 +54,8 @@
 	</Environment>
 	<Data>
 		<Volume>
-			<HostDir></HostDir>
-			<ContainerDir>/transcode/cut</ContainerDir>
-			<Mode>rw</Mode>
-		</Volume>  
-		<Volume>
-			<HostDir></HostDir>
-			<ContainerDir>/transcode/encode</ContainerDir>
-			<Mode>rw</Mode>
-		</Volume> 
-		<Volume>
-			<HostDir></HostDir>
-			<ContainerDir>/transcode/complete</ContainerDir>
+			<HostDir>/mnt/user/transcode</HostDir>
+			<ContainerDir>/transcode</ContainerDir>
 			<Mode>rw</Mode>
 		</Volume> 
 	</Data>
