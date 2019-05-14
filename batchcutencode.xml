@@ -13,16 +13,16 @@
 	
 	Once the docker is started, files can be copied into the cut or encode directories.  They will be automatically detected and the processing will be kicked off.  If files are copied in the directories prior to teh docker starting, they will not be detected.[br][br]
 	
-	The batchcutencode directory on the share has a file called defaultsettings.txt.  This allows you to override environment variables set in the GUI on the fly.
+	The batchcutencode directory on the share has a file called defaultsettings.txt.  This allows you to override environment variables set in the GUI on the fly.[br][br]
 	
 	Variables:[br]
 	* SECONDS_FRONT: seconds to be cut off beginning of video.  must be an integer.  Default is 5 seconds[br]
 	* SECONDS_END: seconds to be cut off end of video.  must be an integer.  Default is 5 seconds[br]
-	* ENCODE_PROFILE:[br]
-		Very Fast 1080p30[br]
-		Fast 1080p30[br]
-		HQ 1080p30 Surround[br]
-		Super HQ 1080p30 Surround[br]
+	* ENCODE_PROFILE:[br][br]
+	Very Fast 1080p30[br][br]
+	Fast 1080p30[br][br]
+	HQ 1080p30 Surround[br][br]
+	Super HQ 1080p30 Surround[br][br]
 [br]
 	</Description>
 	<Change></Change>
