@@ -30,8 +30,9 @@
 	Example defaultsettings.txt file:[br]
 	# Using this overides the settings in the UNRAID Docker Settings GUI.[br]
 	# These settings are sourced before each file is processed and can therfor be changed on the fly.[br]
-	# This will disable the encoding and only do a cut.  Cut files will be placed in the encode directory, but not be processed when this is enabled.
-	#CUT_ONLY="YES"
+	# (Blank Lines in this file can cause issues if file created in windows - windows newline issue)[br]
+	# This will disable the encoding and only do a cut.  Cut files will be placed in the encode directory, but not be processed when this is enabled.[br]
+	#CUT_ONLY="YES"[br]
 	# Defines how many seconds to cut off of the front and back of the video.  Default for both is 5 seconds[br]
 	#export SECONDS_FRONT=5[br]
 	#export SECONDS_END=5[br]
